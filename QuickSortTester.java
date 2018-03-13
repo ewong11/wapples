@@ -12,9 +12,10 @@ public static void main(String[] args){
       //populating new awway
 	    arr = new int[n];
       for( int i = 0; i < n; i++ )
-      arrMatey[i] = (int)( 48 * Math.random() );
+      arr[i] = (int)( 48 * Math.random() );
 
-      int total;
+      double total = 0.0;
+			int counter = 0;
       while (counter < 1000) {
       long startTime = System.nanoTime();
 		  code.qsort(arr);
