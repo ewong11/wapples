@@ -1,4 +1,4 @@
-//Larry Wong, Eric Wong, Joshua weiner
+//Larry Wong, Eric Wong, Joshua Weiner - wapples
 //APCS2 pd8
 //L01 -- What Does the Data Say?
 //2018-03-13
@@ -179,7 +179,7 @@ public class QuickSort
     qsort( arrMatey );
     System.out.println("arrMatey after sort: " );
     printArr(arrMatey);
-    
+
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
   }//end main
