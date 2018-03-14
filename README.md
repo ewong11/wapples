@@ -18,9 +18,9 @@
 
 # Experiment Methodology
 <ol>
-	<li>  <p> Step 1:Populate an array with integers iterating by 1000, starting at 1000 going to 9999999.</p> </li>
-	<li>  <p> Step 2: Start timer. The timer will time, in nanoseconds, the amount of time the each search takes, of which we will do 1000 trials. After 10000, average the amount of time it took for each trial. This will be the average amount of time it takes to sort a list of a certain size</p> </li>
-	<li>  <p> Step 3: Increment size by 1000 and repeat Steps 1 and 2. Keep repeating until size reaches 1000000. This ensures that we will be testing arrays of each size from 1000-1000000 (incremented by 1000) and each sized array tested 1000 times. </p> </li>
+	<li>  <p> Step 1:Populate an array with integers iterating by 1000, starting at 1000 going to 100000.</p> </li>
+	<li>  <p> Step 2: Start timer. The timer will time, in nanoseconds, the amount of time the each search takes, of which we will do 100 trials. After 100 trials, average the amount of time it took for each trial. This will be the average amount of time it takes to sort a list of a certain size</p> </li>
+	<li>  <p> Step 3: Increment size by 100 and repeat Steps 1 and 2. Keep repeating until size reaches 100000. This ensures that we will be testing arrays of each size from 1000-100000 (incremented by 1000) and each sized array tested 100 times. </p> </li>
 
 </ol>
 
@@ -29,18 +29,18 @@
     <img src="https://github.com/ewong11/wapples/blob/master/quicksortData.png" >
     <p> Link to our Google Spreadsheet: https://docs.google.com/spreadsheets/d/1rLJW9wGxqFKBiSrYIaNkXJ835zDR4oddDjg8YMyOBWg/edit#gid=1395060798</p>
 <h3> Observations </h3>
-<p> This graph appears to have a linear trend. this would agree with our hypothesis, which was that our experiment ran in O(n) linear time. </p>
-<p> The graph shows the average runtime (10,000 trials) of each size (1000-10000;increments of 100) to ensure the most accurate and precise results. </p>
+<p> This graph appears to have a logarithmic trend. this would agree with our hypothesis, which was that our experiment ran in O(nlogn) linear time. </p>
+<p> The graph shows the average runtime (100 trials) of each size (1000-100000;increments of 1000) to ensure the most accurate and precise results. </p>
 
 # Conclusions
 <ul>
 	<li> Analysis </li>
 	     <ul>
 		<li> <p>Our code runs in logarithmic time.</p> </li>
-		<li> <p>The data seems to change in increments - the change in runtime between each size increment of 100 is relatively constant.</p> </li>
+		<li> <p></p> </li>
 	     </ul>
 	<li> Unresolved Issues </li>
 	     <ul>
-		<li> <p> There are sometimes random spikes (outliers) for random sizes in the data, which is strange, since the average of 10,000 trials should not return any outliers. </p> </li>
+		<li> <p>The code seems to run as expected </p> </li>
 	     </ul>
 </ul>
