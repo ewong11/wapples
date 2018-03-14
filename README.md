@@ -37,10 +37,11 @@
 	<li> Analysis </li>
 	     <ul>
 		<li> <p>Our code runs in logarithmic time.</p> </li>
-		<li> <p></p> </li>
+		<li> <p>The Big-O runtime of this sort is the same as mergesort, but this does not require the creation of a new array, which saves memory. This is thus a benefit of QuickSort.</p> </li>
 	     </ul>
 	<li> Unresolved Issues </li>
 	     <ul>
-		<li> <p>The code seems to run as expected </p> </li>
+		<li> <p>The code seems to run as expected. </p>
+		     <p> there are some data spikes, but nothing too major. More trials may smooth this out.</li>
 	     </ul>
 </ul>
