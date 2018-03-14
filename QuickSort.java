@@ -165,7 +165,7 @@ public class QuickSort
 
 
     // arrays of randomly generated ints
-    int[] arrMatey = new int[20];
+    int[] arrMatey = new int[39];
     for( int i = 0; i < arrMatey.length; i++ )
     arrMatey[i] = (int)( 48 * Math.random() );
 
