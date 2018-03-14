@@ -16,6 +16,17 @@
 # Background
 <p> QuickSort seemed to provide an alternative sort that could possibly sort a list as fast as, if not faster, than mergesort, which was the fastest sort we have thus far learned. Because of this, and the fact that QuickSort may use less memory than mergesort, warranted testing of QuickSort and its runtime.</p>
 
+# Runtime Classification
+<ul>
+	<li> Best Case: O(nlogn) </li>
+	<li> Average Case: O(nlogn) </li>
+	<li> Worst Case: O(n^2) </li>
+</ul>
+<b>Pivot Selection and Data Arrangement </b>
+<p> The point chosen as the pivot can impact runtime. The optimal pivot is either random or the median (middle index) of a paritioned section. These pivots will give the greatest chance for creating two partitioned lists ("halves") following each recursive call of partition. This will lead to O(nlogn). If one were to choose a pivot that is on either end of the list, and the list is sorted, then runtime will be greater because every time partition is called, there is only one partitioned side.
+	For example, a list sorted from least to greatest, with the pivot at the last index. Every partiton will create a new list with the pivot at the end, since there are no elements greater than the last element of the pivot. The list to be sorted therefore only decreases by 1 for each call to partition, leading to O(n^2) runtime. Thus, depending on the choice of pivot and how the data is arranged, run-time can be greatly affected. 
+	
+
 # Experiment Methodology
 <ol>
 	<li>  <p> Step 1:Populate an array with integers iterating by 1000, starting at 1000 going to 100000.</p> </li>
@@ -37,12 +48,11 @@
 	<li> Analysis </li>
 	     <ul>
 		<li> <p>Our code runs in logarithmic time.</p> </li>
-		<li> <p>The Big-O runtime of this sort is the same as mergesort, but this does not require the creation of a new array, which saves memory. This is thus a benefit of QuickSort.</p> </li>
+		<li> <p>The Big-O runtime of this sort is the same as mergesort, but this does not require the creation of a new array, which saves memory. Compared ot other sorts, QuickSort is both fast and efficient (memory-wise). We conclude that quick sort has many benefits over the other sorts that we learned, and should be considered as our main way to sort an array.</p> </li>
 	     </ul>
 	<li> Unresolved Issues </li>
 	     <ul>
 		<li> <p>The code seems to run as expected. </p>
-		     <p> there are some data spikes, but nothing too major. More trials may smooth this out.</li>
-		     <li> <p>The biggest obstacle to testing QuickSort came not from the methods contained in QuickSort themselves (which were the only things timed), but actually from the time it took to populate arrays with random numbers in QuickSortTester. We had to do this in order to populate consistently random arrays (and get accurate results). However this process runs at O(n), meaning that we could not afford to actually test the time it took to populate these arrays - hence why this process was contained in the Tester class and not the Sort class. However, the amount of time this took, especially as the arrays increased in size, was very large and discouraged us from testing even more arrays of even greater length. This is less an issue with the sorting algorithm or our results, moreso an issue that arises with the quest to achieve accurate data.</p></li>
+		     <p> However, there are slight data spikes, but nothing too major. More trials may smooth this out.</li>
 	     </ul>
 </ul>
