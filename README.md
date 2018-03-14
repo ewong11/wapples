@@ -38,7 +38,7 @@
 # Results
 <h2 align="center"> Graph </h2>
     <img src="https://github.com/ewong11/wapples/blob/master/quicksortData.png" >
-    <p> Link to our Google Spreadsheet: https://docs.google.com/spreadsheets/d/1rLJW9wGxqFKBiSrYIaNkXJ835zDR4oddDjg8YMyOBWg/edit#gid=1395060798</p>
+    <p> Link to our Google Spreadsheet: https://docs.google.com/spreadsheets/d/1rLJW9wGxqFKBiSrYIaNkXJ835zDR4oddDjg8YMyOBWg/edit?usp=sharing</p>
 <h3> Observations </h3>
 <p> This graph appears to have a logarithmic trend. this would agree with our hypothesis, which was that our experiment ran in O(nlogn) linear time. </p>
 <p> The graph shows the average runtime (100 trials) of each size (1000-100000;increments of 1000) to ensure the most accurate and precise results. </p>
