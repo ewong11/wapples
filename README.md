@@ -30,7 +30,7 @@
 # Experiment Methodology
 <ol>
 	<li>  <p> Step 1:Populate an array with integers iterating by 1000, starting at 1000 going to 100000.</p> </li>
-	<li>  <p> Step 2: Start timer. The timer will time, in nanoseconds, the amount of time the each search takes, of which we will do 100 trials. After 100 trials, average the amount of time it took for each trial. This will be the average amount of time it takes to sort a list of a certain size</p> </li>
+	<li>  <p> Step 2: Start timer. The timer will time, in nanoseconds, the amount of time the each search takes, of which we will do 100 trials. After 100 trials, average the amount of time it took for each trial. This will be the average amount of time it takes to sort a list of a certain size</p> </li>
 	<li>  <p> Step 3: Increment size by 100 and repeat Steps 1 and 2. Keep repeating until size reaches 100000. This ensures that we will be testing arrays of each size from 1000-100000 (incremented by 1000) and each sized array tested 100 times. </p> </li>
 
 </ol>
@@ -42,6 +42,8 @@
 <h3> Observations </h3>
 <p> This graph appears to have a logarithmic trend. this would agree with our hypothesis, which was that our experiment ran in O(nlogn) linear time. </p>
 <p> The graph shows the average runtime (100 trials) of each size (1000-100000;increments of 1000) to ensure the most accurate and precise results. </p>
+<p> We also tested the runtime of the worst case. In order to do this, we used a sorted array and set the pivot to the last index. The list should be sorted one at a time, causing O(n^2). Our data seems to reflect this runtime. <\p>
+	
 
 # Conclusions
 <ul>
