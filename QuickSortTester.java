@@ -26,6 +26,7 @@ public class QuickSortTester {
 	    while (counter < 100) {
 		code.shuffle(arr);
 		long startTime = System.nanoTime();
+<<<<<<< HEAD
 		code.qsortRandom(arr);
 		long endTime = System.nanoTime() - startTime;
 		total += endTime;
@@ -61,6 +62,9 @@ public class QuickSortTester {
 	    while (counter < 100) {
 		long startTime = System.nanoTime();
 		code.qsortSet(arr);
+=======
+		code.qsort(arr);
+>>>>>>> b6bfc7d0bca4f4b60ccb297de181ae6545fe1451
 		long endTime = System.nanoTime() - startTime;
 		total += endTime;
 
@@ -74,6 +78,7 @@ public class QuickSortTester {
 	    n += 100;
 
 	}
+	
 
     }
 }

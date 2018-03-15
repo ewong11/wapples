@@ -96,20 +96,9 @@ public class QuickSort
   Precondition: an unsroted array
   Postcondition: a sorted array
   *****************************************************/
-  public static void qsortRandom( int[] d )
+  public static void qsort( int[] d )
   {
-    qsortRandom(d, 0 , d.length-1);
-  }
-  /*****************************************************
-  * void qsortSet(int[]) - wrapper method
-  * @param d -- array of ints to be sorted in place
-  Precondition: an unsroted array
-  Postcondition: a sorted array
-Same as previous method, but with a set pivot location
-  *****************************************************/
-      public static void qsortSet( int[] d )
-  {
-    qsortSet(d, 0 , d.length-1);
+    qsort(d, 0 , d.length-1);
   }
   /*****************************************************
   * void qsortRandom(int[],left,right)
@@ -119,30 +108,12 @@ Same as previous method, but with a set pivot location
   Precondition: unsorted array, starting left bound and the starting right bound
   Postcondition: the array is sorted
   *****************************************************/
-  public static void qsortRandom(int[] d, int left, int right){
+  public static void qsort(int[] d, int left, int right){
 
     if (left < right){
       int pvtPos = partition(d,left,right,(left+(int)(Math.random()*(right-left+1))));
-      qsortRandom(d,left,pvtPos-1);
-      qsortRandom(d,pvtPos+1,right);
-    }
-
-  }
-  /*****************************************************
-  * void qsortR(int[],left,right)
-  * @param d -- array of ints to be sorted in place
-  * @param left -- the index of the left bound, starting index of set of values in d to be quicksorted
-  * @param right -- the index of the right bound, ending index of set of values in d to be quicksorted
-  Precondition: unsorted array, starting left bound and the starting right bound
-  Postcondition: the array is sorted
-  Same as previous method, but with pivot at the right most available element instead of random
-  *****************************************************/
-     public static void qsortSet(int[] d, int left, int right){
-
-    if (left < right){
-      int pvtPos = partition(d,left,right,right);
-      qsortSet(d,left,pvtPos-1);
-      qsortSet(d,pvtPos+1,right);
+      qsort(d,left,pvtPos-1);
+      qsort(d,pvtPos+1,right);
     }
 
   }
@@ -187,7 +158,7 @@ Same as previous method, but with a set pivot location
     System.out.println("\narr2 init'd to: " );
     printArr(arr2);
 
-    qsortRandom( arr2 );
+    qsort( arr2 );
     System.out.println("arr2 after qsort: " );
     printArr(arr2);
 
@@ -204,7 +175,7 @@ Same as previous method, but with a set pivot location
     System.out.println("arrMatey post-shuffle: " );
     printArr(arrMatey);
 
-    qsortRandom( arrMatey );
+    qsort( arrMatey );
     System.out.println("arrMatey after sort: " );
     printArr(arrMatey);
 
